@@ -11,7 +11,6 @@ function App(){
     const [globalCount,setGlobalCount] = useState(0);
     const [globalUserObject,setGlobalUserObject]=useState({});
     const [globalisLogin,setGlobalIsLogin] = useState(false);
-    const [globalCart,setGlobalCart]=useState({});
 
     return (
         <globalContext.Provider value={{globalCount,setGlobalCount,globalUserObject,setGlobalUserObject,globalisLogin,setGlobalIsLogin}}>

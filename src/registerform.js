@@ -9,7 +9,7 @@ function Register(){
     const [yearValue,setYear] = useState('');
     const [genderValue,setGender] = useState('Female');
     const [userValue,setUser] = useState({});
-    const {globalUserObject,setGlobalUserObject}=useContext(globalContext);
+    const {setGlobalUserObject}=useContext(globalContext);
     const getCollegeId =(event) => {
     setCollegeId(event.target.value)
     console.log(collegeIdValue);

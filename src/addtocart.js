@@ -1,4 +1,4 @@
-import{useEffect, useState,useContext} from "react";
+import{ useState,useContext} from "react";
 import { globalContext } from "./App";
 function Addtocart(){
     const [count, setCount]=useState(0)

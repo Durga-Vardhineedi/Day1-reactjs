@@ -1,9 +1,9 @@
 import { globalContext } from "./App";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Navigation from "./Navigation";
 function Profile(){
-    const{globalUserObject,setGlobalUserObject}=useContext(globalContext);
-    const{globalisLogin,setGlobalIsLogin} = useContext(globalContext);
+    const{globalUserObject}=useContext(globalContext);
+    const{setGlobalIsLogin} = useContext(globalContext);
     const logoutAction =()=>{
         setGlobalIsLogin(false);
     }

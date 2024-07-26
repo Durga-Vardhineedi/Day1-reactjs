@@ -1,13 +1,12 @@
 import {useRef,useState,useEffect, useContext} from "react";
 import "./card.css";
-import { UserContext } from "./Home";
 import { globalContext } from "./App";
 function Login(){
     const firstRef = useRef(null);
     const secondRef = useRef(null);
     const [resultMessage, setResultMessage] = useState('');
-    const {globalisLogin,setGlobalIsLogin} =  useContext(globalContext)
-    const{globalUserObject,setGlobalUserObject}=useContext(globalContext);
+    const {setGlobalIsLogin} =  useContext(globalContext)
+    const{globalUserObject}=useContext(globalContext);
     // use Effect to focus on input field everytime we Refresh
     useEffect(()=>{
         if(firstRef.current)

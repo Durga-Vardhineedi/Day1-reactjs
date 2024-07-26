@@ -8,7 +8,7 @@ function Productname(){
         </div>
         <div>
             <I />
-        </div>
+        </div>w
         <div>
             <P />
         </div>
