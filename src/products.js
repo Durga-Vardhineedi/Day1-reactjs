@@ -1,17 +1,17 @@
 import axios from "axios";
 import Navigation from "./Navigation";
-import { useEffect, useState,useContext } from "react";
+import { useEffect, useState} from "react";
 import Addtocart from "./addtocart";
 function Fetching() {
     const [data, setData] = useState([]);
-    const [count, setCount]=useState(0)
+    //const [count, setCount]=useState(0)
     
-    const btnincrementCount =()=> {
-        setCount(count+1);
-    }
-    const btndecrementCount =()=> {
-        setCount(count-1);
-    }
+    // const btnincrementCount =()=> {
+    //     setCount(count+1);
+    // }
+    // const btndecrementCount =()=> {
+    //     setCount(count-1);
+    // }
     useEffect(() => {
         const fetchMyData = async () => {
             const res = await axios.get('https://fakestoreapi.com/products'); // Using axios to fetch data

@@ -1,5 +1,5 @@
 import Login from "./loginform";
-import Navigation from "./Navigation";
+//import Navigation from "./Navigation";
 import Register from "./registerform";
 import {useState} from "react";
 function Tabfun(){
