@@ -1,7 +1,7 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 // import Tabfun from "./Tabfun";
 import Products from "./products";
-import ReviewInput from "./p3(assignment)";
+import ReviewInput from "./review2";
 import Welcome from "./Welcome";
 import Home from "./Home";
 import Profile from "./profile";

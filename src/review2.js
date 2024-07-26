@@ -1,5 +1,5 @@
 import I from "./addtocart";
-import P from "./p2(assignment)";
+import P from "./review";
 function Productname(){
     return(
         <div>

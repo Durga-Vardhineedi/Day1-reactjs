@@ -1,7 +1,7 @@
 import {useRef,useState,useEffect, useContext} from "react";
 import "./card.css";
 import { UserContext } from "./Home";
-import { globalContext } from "./app";
+import { globalContext } from "./App";
 function Login(){
     const firstRef = useRef(null);
     const secondRef = useRef(null);

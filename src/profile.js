@@ -1,4 +1,4 @@
-import { globalContext } from "./app";
+import { globalContext } from "./App";
 import { useContext, useEffect } from "react";
 import Navigation from "./Navigation";
 function Profile(){

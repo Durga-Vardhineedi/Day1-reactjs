@@ -3,7 +3,7 @@ import Tabfun from "./Tabfun.js";
 import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
 import Welcome from "./Welcome";
-import { globalContext } from "./app.js";
+import { globalContext } from "./App.js";
 //export const UserContext = createContext(); //create context
 function Home(){
     const {globalisLogin,setGolbalIsLogin} = useContext(globalContext);

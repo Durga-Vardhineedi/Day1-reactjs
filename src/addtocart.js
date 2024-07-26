@@ -1,5 +1,5 @@
 import{useEffect, useState,useContext} from "react";
-import { globalContext } from "./app";
+import { globalContext } from "./App";
 function Addtocart(){
     const [count, setCount]=useState(0)
     const {globalCount,setGlobalCount} = useContext(globalContext)

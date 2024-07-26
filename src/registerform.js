@@ -1,5 +1,5 @@
 import {useContext, useState} from "react";
-import { globalContext } from "./app";
+import { globalContext } from "./App";
 import "./card.css";
 function Register(){
     const [collegeIdValue,setCollegeId] = useState('');

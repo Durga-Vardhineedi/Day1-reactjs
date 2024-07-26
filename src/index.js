@@ -7,7 +7,7 @@ import ReactDOM from "react-dom/client";
 //import Register from "./registerform";
 // import Tabfun from "./Tabfun";
 // import Products from "./janu";
-import App from "./app";
+import App from "./App";
 // import Tabfun from "./Tabfun";
 const rootElement = document.getElementById('root');
 const rootref = ReactDOM.createRoot(rootElement);
