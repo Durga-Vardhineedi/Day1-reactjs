@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+// import Tabfun from "./Tabfun";
+import Products from "./products";
+import ReviewInput from "./p3(assignment)";
+import Welcome from "./Welcome";
+import Home from "./Home";
+import Profile from "./profile";
+import { useState,createContext } from "react";
+export const globalContext = createContext(); //create context
+function App(){
+    const [globalCount,setGlobalCount] = useState(0);
+    const [globalUserObject,setGlobalUserObject]=useState({});
+    const [globalisLogin,setGlobalIsLogin] = useState(false);
+    const [globalCart,setGlobalCart]=useState({});
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <globalContext.Provider value={{globalCount,setGlobalCount,globalUserObject,setGlobalUserObject,globalisLogin,setGlobalIsLogin}}>
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path='/home' element={<Welcome/>}/>
+            <Route path="/products" element ={<Products />} />
+            <Route path="/review" element={<ReviewInput />} />
+            <Route path="/profile" element={<Profile />}/>
+
+        </Routes>
+        </BrowserRouter>
+        </globalContext.Provider>
+    );
 }
-
 export default App;
